@@ -132,7 +132,7 @@ setup(
     ],
     setup_requires=sphinx + pytest_runner,
     tests_require=['pytest-cov', 'pytest', 'pathlib;python_version<"3.4"', 'pythonnet', 'py4j'],
-    install_requires=['py4j', 'pythonnet;platform_system=="Windows"'],
+    install_requires=['py4j'],
     cmdclass={'docs': BuildDocs, 'apidocs': ApiDocs},
     packages=find_packages(include=('msl*',)),
     include_package_data=True,
